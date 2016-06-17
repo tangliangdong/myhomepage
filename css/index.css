@@ -1,0 +1,112 @@
+body{
+	background: #eee;
+}
+
+.head{
+	position: relative;
+}
+
+
+.head img{
+	position: absolute;
+	left: 50%;
+	top:60px;
+	margin-left: -100px;
+	transition: 1s;
+	border-radius: 105px;
+}
+
+.head img:hover{
+	transform: scale(1.5);
+	box-shadow: 10px 10px 6px #D3D3D3;
+}
+.identity{
+	position: absolute;
+	left: 78%;
+	top: 80px;
+	text-shadow: 1.2px 1.2px .2px #ABABAB;
+	opacity: 0;
+
+}
+
+.identity h3{
+	font-family: '幼圆'
+}
+
+.subtitle{
+	position: relative;
+
+}
+
+.blog img{
+	transition: 1s;
+}
+.subtitle img{
+	border-radius: 70px;
+	border:0px;
+}
+.subtitle img:hover{
+	transform: scale(1.5);
+	box-shadow: 10px 10px 4px #D3D3D3;
+}
+.blog{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 320px;
+	left: 28%;
+	transform: translate(-40%);
+}
+
+
+.hint{
+	position: absolute;
+	padding: 0 20px;
+	border:1px solid #f00;
+	border-radius: 0.4em;
+	left: 27%;
+	top: 550px;
+	opacity: 0;
+	transform: translate(-49%);
+	
+}
+.subtitle em{
+	font-family: none;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+.subtitle span{
+	display: block;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border:7px solid transparent;
+	border-bottom-color: #f00;
+	left: 50%;
+	top: -14px;
+	transform: translate(-50%);
+
+}
+
+.whatever{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 470px;
+	left: 60%;
+	transform: translate(10%);
+}
+.whatever img{
+	transition: 1s;
+}
+
+.hint2{
+	position: absolute;
+	padding: 0 20px;
+	border:1px solid #f00;
+	border-radius: 0.4em;
+	left: 59.1%;
+	top: 700px;
+	opacity: 0;
+	transform: translate(12%);
+}
