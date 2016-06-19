@@ -2,17 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="shortcut icon" href="images/head1.png" />
 	<title>Hello World</title>
 	<script src="js/jquery-2.2.3.js"></script>
 
-	<script src="js/javascript.js"></script>
+	
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<div class="head">
-		<img src="images/head.png" width="210px" height="210px" alt="">
+	<!-- 右侧菜单按钮 -->
+	<section>
+		<div class="item">
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<span class="span3"></span>
+		</div>
+
+		<nav class="nav1">
+			<div class="github">
+				<a href="https://github.com/tangliangdong" target="_blank">
+					<img src="images/GitHub-Mark-64px.png" width="50px" height="50px" alt="">
+				</a>
+				
+			</div>
+			<div class="zhizhi">
+				<a href="http://zhizhi.betahouse.us/" target="_blank">
+					<img src="images/zhizhi.png" width="50px" height="50px" alt="">
+				</a>
+				
+			</div>
+			<div class="about_me">
+				<a href="about_me.html">
+					<img src="images/about_me.png" width="50px" height="50px" alt="">
+				</a>
+			</div>
+		</nav>
+		
+	</section>
+	
+
+	<div class="head" id="head">
+		<img src="images/head.png" width="210px" height="210px" class="unselected" alt="">
 	</div>
 	<div class="identity">
 		<h2>唐良栋</h2>
@@ -40,5 +71,6 @@
 		
 	</div>
 
+	<script src="js/javascript.js"></script>
 </body>
 </html>
