@@ -2,14 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<title>about me</title>
 	<link rel="stylesheet" href="css/about_me.css">
+	<script src="js/underscore-min.js"></script>
+	<script src="js/jquery-2.2.3.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- 抖动插件  -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ShakeBorder.js"></script>
+	<link href="css/ShakeBorder.css" rel="stylesheet">
 </head>
 <body>
-	
-	<div class="about">
+	<div class="about"  id="about">
+		<section class="about_me" id="about_me">
+			<i class="me">about me</i>
+			<hr class="about_me_hr" id="about_hr1">
+			<i class="major about_prefix">
+				软件工程
+			</i>
+			<hr class="about_me_hr" id="about_hr2">
+			<i class="me_github about_prefix">
+				www.tangliangdong.com
+			</i>
+			<hr class="about_me_hr" id="about_hr3">
+			<i class="me_email about_prefix">
+				tld@betahouse.us
+			</i>
+			<hr class="about_me_hr" id="about_hr4">
+			<blockquote class="introduce">
+				<p>不想在年轻的时候，
+					就把自己一生的轨迹给定下来。
+					喜欢的书要读下去的，热爱的骑行要坚持下去的，向往的前端技术要学下去的。
+					义无反顾地相信，诗和远方终会诞生在自己的手中。
+				</p>
+			</blockquote>
+		</section>
+
+		<nav class="nav">
+			<nav class="about_nav_head">
+				<a href="index.html">
+					<img src="images/head.png" width="180px" height="180px" alt="" class="ShakeAndBorder">
+				</a>
+			</nav>
+			<nav class="nav_div" id="nav_div">
+				<h3 class="nav_div_title">Hello</h3>
+				<a class="label" id="wangxinze" href="http://wangxinze.com" target="_blank">
+					<span class="label_triangle"></span>
+					<span class="label_main">
+						大表哥
+					</span>
+					<span class="label_circle"></span>
+				</a>
+
+				<a class="label" id="huangbingbing" href="http://huangbingbing.com" target="_blank">
+					<span class="label_triangle"></span>
+					<span class="label_main">
+						黄炳炳
+					</span>
+					<span class="label_circle"></span>
+				</a>
 		
+				<a class="label" id="lukonghang" href="http://www.lukonghang.com/blog/" target="_blank">
+					<span class="label_triangle"></span>
+					<span class="label_main">
+						杭哥
+					</span>
+					<span class="label_circle"></span>
+				</a>
+
+				<a class="label" id="qiyanling" href="http://www.qiyanling.com" target="_blank">
+					<span class="label_triangle"></span>
+					<span class="label_main">
+						戚雁翎
+					</span>
+					<span class="label_circle"></span>
+				</a>
+
+
+			</nav>
+		</nav>
+
 
 	</div>
+
+	<!-- 右侧菜单按钮 -->
+	<section class="right_item">
+		<div class="item">
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<span class="span3"></span>
+		</div>
+
+		<nav class="nav1">
+			<div class="github">
+				<a href="https://github.com/tangliangdong" target="_blank">
+					<img src="images/GitHub-Mark-64px.png" width="50px" height="50px" alt="">
+				</a>
+				
+			</div>
+			<div class="zhizhi">
+				<a href="http://zhizhi.betahouse.us/" target="_blank">
+					<img src="images/zhizhi.png" width="50px" height="50px" alt="">
+				</a>
+				
+			</div>
+		</nav>
+		
+	</section>
+
+	<script>$('.ShakeAndBorder').ShakeBorder();</script>
+	<script src="js/about.js"></script>
 </body>
 </html>

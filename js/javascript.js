@@ -57,7 +57,7 @@ $(function(){
 		$('.hint2').animate({'opacity':0,'top':'700px'},400);
 		$('.whatever img').unbind('click');
 	});
-
+	//右侧菜单事件
 	window.Item_isclick=false;
 	var	link_ishover=false;
 	window.navClock;
