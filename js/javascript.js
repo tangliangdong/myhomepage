@@ -1,13 +1,13 @@
 $(function(){
 	var IS_PHONE=false;
-	if(navigator.platform.indexOf('Win32')!=-1){ 
+	if(navigator.platform.indexOf('Win32')!=-1){
         //做pc端
         IS_PHONE=false;
-    }else{ 
+    }else{
        	//做手机端
        	IS_PHONE=true;
     }
-	
+
 	if(IS_PHONE===false){
 		$('.blog').attr('href','blog/');
 		$('.whatever').attr('href','imageWall/');
@@ -32,22 +32,22 @@ $(function(){
 	$('.blog img').hover(function(){
 		var title = $('.blog').attr('data');
 		$('.hint em').text(title);
-		
+
 		$('.hint').animate({'opacity':1,'top':'520px'},500,function(){
 			$('.blog img').bind('click',function(){
-				 window.location.href="blog/";
+				 window.location.href="http://tangliangdong.github.io";
 			})
 		});
 	},function(){
 		$('.hint').animate({'opacity':0,'top':'550px'},400);
 		$('.blog img').unbind('click');
-		
+
 	});
 
 	$('.whatever img').hover(function(){
 		var title = $('.whatever').attr('data');
 		$('.hint2 em').text(title);
-		
+
 		$('.hint2').animate({'opacity':1,'top':'670px'},500,function(){
 			$('.whatever img').bind('click',function(){
 				 window.location.href="imageWall/";
@@ -77,10 +77,10 @@ $(function(){
 				$('.nav1').animate({'opacity':0},600,function(){
 					$('.nav1').css('display','none');
 				});
-				
+
 				Item_isclick=false;
 			}
-			
+
 		},
 		mouseup:function(){
 			$('.item span').css({'box-shadow':'2px 3px 1px #D3D3D3','background':'#333333'});
@@ -91,8 +91,8 @@ $(function(){
 	},function(){
 		navClock=setTimeout('linkTime()',4000);
 	})
-	
-	
+
+
 })
 //右侧菜单延时消失的事件
 function linkTime(){
@@ -103,6 +103,6 @@ function linkTime(){
 
 			Item_isclick=false;
 		});
-			
+
 	}
 }
